@@ -1,6 +1,6 @@
 # CodersCave-ui-ux-Phase2
 I'm thrilled to announce the completion of Task 1 in Phase 2 of the CVIP program! I've successfully developed an eLearning platform interface that boasts a clean and responsive UI/UX design. This project not only demonstrates my ability to create aesthetically pleasing and intuitive interfaces but also my commitment to enhancing user experiences through meticulous design and functionality.
-# Here are the steps you might have taken to create a clean and responsive UI/UX for an eLearning platform using SwiftUI:
+# Here are the steps taken to create a clean and responsive UI/UX for an eLearning platform using SwiftUI:
 
 # 1) Project Setup:
 
