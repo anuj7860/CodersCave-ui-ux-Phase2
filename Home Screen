@@ -1,2133 +1,777 @@
-Container(
-  width: 430,
-  height: 159,
-  decoration: BoxDecoration(
-    color: Colors.white,
-    boxShadow: [
-      BoxShadow(
-        color: Color(0xFFDEE9F1),
-        blurRadius: 25,
-        offset: Offset(0, 3),
-        spreadRadius: 2,
+import SwiftUI
+
+struct ContentView: View {
+  var body: some View {
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 430, height: 159)
+      .background(.white)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 1), radius: 25, y: 3
       )
-    ],
-  ),
-),
-Container(
-  width: 325,
-  height: 52,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 1,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 325, height: 52)
+      .background(.white)
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-SizedBox(
-  width: 146,
-  height: 30,
-  child: Text(
-    'Search',
-    style: TextStyle(
-      color: Color(0xFF2300FF),
-      fontSize: 20,
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w500,
-      height: 0,
-    ),
-  ),
-),
-SizedBox(
-  width: 180,
-  height: 37,
-  child: Text(
-    'Courses',
-    style: TextStyle(
-      color: Colors.black,
-      fontSize: 25,
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
-      height: 0,
-    ),
-  ),
-),
-Container(
-  width: 187,
-  height: 72,
-  decoration: ShapeDecoration(
-    color: Color(0xFF55C1FF),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 1,
+    Text("Search")
+      .font(Font.custom("Inter", size: 20).weight(.medium))
+      .foregroundColor(Color(red: 0.14, green: 0, blue: 1))
+    Text("Courses")
+      .font(Font.custom("Inter", size: 25).weight(.bold))
+      .foregroundColor(.black)
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 187, height: 72)
+      .background(Color(red: 0.33, green: 0.76, blue: 1))
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-Container(
-  width: 187,
-  height: 72,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 5,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 187, height: 72)
+      .background(.white)
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-Container(
-  width: 187,
-  height: 72,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 1,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 187, height: 72)
+      .background(.white)
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-Container(
-  width: 187,
-  height: 72,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 1,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 187, height: 72)
+      .background(.white)
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-Container(
-  width: 53,
-  height: 54,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: OvalBorder(),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3F000000),
-        blurRadius: 4,
-        offset: Offset(0, 4),
-        spreadRadius: 0,
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 53, height: 54)
+      .background(.white)
+      .shadow(
+        color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
       )
-    ],
-  ),
-),
-Container(
-  width: 53,
-  height: 54,
-  decoration: ShapeDecoration(
-    color: Color(0xFFF8D89B),
-    shape: OvalBorder(),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3F000000),
-        blurRadius: 4,
-        offset: Offset(0, 4),
-        spreadRadius: 0,
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 53, height: 54)
+      .background(Color(red: 0.98, green: 0.85, blue: 0.61))
+      .shadow(
+        color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
       )
-    ],
-  ),
-),
-Container(
-  width: 53,
-  height: 54,
-  decoration: ShapeDecoration(
-    color: Color(0xFFDBFF00),
-    shape: OvalBorder(),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3F000000),
-        blurRadius: 4,
-        offset: Offset(0, 4),
-        spreadRadius: 0,
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 53, height: 54)
+      .background(Color(red: 0.86, green: 1, blue: 0))
+      .shadow(
+        color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
       )
-    ],
-  ),
-),
-Container(
-  width: 53,
-  height: 54,
-  decoration: ShapeDecoration(
-    color: Color(0xFFECEEE3),
-    shape: OvalBorder(),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3F000000),
-        blurRadius: 4,
-        offset: Offset(0, 4),
-        spreadRadius: 0,
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 53, height: 54)
+      .background(Color(red: 0.93, green: 0.93, blue: 0.89))
+      .shadow(
+        color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
       )
-    ],
-  ),
-),
-Container(
-  width: 53,
-  height: 54,
-  decoration: ShapeDecoration(
-    color: Color(0xFFF6758C),
-    shape: OvalBorder(),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3F000000),
-        blurRadius: 4,
-        offset: Offset(0, 4),
-        spreadRadius: 0,
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 53, height: 54)
+      .background(Color(red: 0.97, green: 0.46, blue: 0.55))
+      .shadow(
+        color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
       )
-    ],
-  ),
-),
-Container(
-  width: 187,
-  height: 72,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 1,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 187, height: 72)
+      .background(.white)
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-Container(
-  width: 187,
-  height: 72,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3FDEEAF1),
-        blurRadius: 25,
-        offset: Offset(1, 1),
-        spreadRadius: 1,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 187, height: 72)
+      .background(.white)
+      .cornerRadius(12)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 0.25), radius: 25, x: 1, y: 1
       )
-    ],
-  ),
-),
-Container(
-  width: 53,
-  height: 54,
-  decoration: ShapeDecoration(
-    color: Color(0xFFFF9F00),
-    shape: OvalBorder(),
-    shadows: [
-      BoxShadow(
-        color: Color(0x3F000000),
-        blurRadius: 4,
-        offset: Offset(0, 4),
-        spreadRadius: 0,
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 53, height: 54)
+      .background(Color(red: 1, green: 0.62, blue: 0))
+      .shadow(
+        color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
       )
-    ],
-  ),
-),
-Container(
-  width: 430,
-  height: 66,
-  decoration: BoxDecoration(
-    color: Colors.white,
-    boxShadow: [
-      BoxShadow(
-        color: Color(0xFFDEE9F1),
-        blurRadius: 25,
-        offset: Offset(0, 3),
-        spreadRadius: 2,
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 430, height: 66)
+      .background(.white)
+      .shadow(
+        color: Color(red: 0.87, green: 0.92, blue: 0.95, opacity: 1), radius: 25, y: 3
       )
-    ],
-  ),
-),
-SizedBox(
-  width: 102,
-  height: 24,
-  child: Text(
-    'All Topics',
-    style: TextStyle(
-      color: Colors.white,
-      fontSize: 20,
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
-      height: 0,
-    ),
-  ),
-),
-SizedBox(
-  width: 102,
-  height: 24,
-  child: Text(
-    'Newest',
-    style: TextStyle(
-      color: Color(0xFF00000E),
-      fontSize: 20,
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
-      height: 0,
-    ),
-  ),
-),
-SizedBox(
-  width: 103,
-  height: 24,
-  child: Text(
-    'Mock Test',
-    style: TextStyle(
-      color: Color(0xFF00000E),
-      fontSize: 20,
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
-      height: 0,
-    ),
-  ),
-),
-SizedBox(
-  width: 251,
-  height: 10,
-  child: Text(
-    'Hi , Good Morning ',
-    style: TextStyle(
-      color: Color(0xFF55C1FF),
-      fontSize: 20,
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w800,
-      height: 0,
-    ),
-  ),
-),
-SizedBox(
-  width: 153,
-  height: 31,
-  child: Text(
-    'Anuj',
-    style: TextStyle(
-      color: Color(0xFF00000E),
-      fontSize: 30,
-      fontFamily: 'Kanit',
-      fontWeight: FontWeight.w700,
-      height: 0,
-    ),
-  ),
-),
-Container(
-  width: 413,
-  height: 288,
-  child: Stack(
-    children: [
-      Positioned(
-        left: 0,
-        top: 0,
-        child: Container(
-          width: 1253,
-          height: 288,
-          child: Stack(
-            children: [
-              Positioned(
-                left: 0,
-                top: 0,
-                child: Container(
-                  width: 231,
-                  height: 288,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 231,
-                          height: 288,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF51C2FF),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 3,
-                        top: 177,
-                        child: Container(
-                          width: 228,
-                          height: 95,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 2,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 219,
-                                  height: 28,
-                                  child: Text(
-                                    'Design Fundamentals',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w800,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 29,
-                                child: SizedBox(
-                                  width: 228,
-                                  height: 28,
-                                  child: Text(
-                                    'Created by Coursera Agency',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 5,
-                                top: 55,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 120,
-                                top: 55,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 169,
-                                top: 66,
-                                child: SizedBox(
-                                  width: 52,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '40',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' min',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 53,
-                                top: 67,
-                                child: SizedBox(
-                                  width: 63,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '17',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' files',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 254,
-                top: 0,
-                child: Container(
-                  width: 231,
-                  height: 288,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 231,
-                          height: 288,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFFF8AD30),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 7,
-                        top: 177,
-                        child: Container(
-                          width: 224,
-                          height: 95,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 2,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 203,
-                                  height: 28,
-                                  child: Text(
-                                    'Machine Learning',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w800,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 1,
-                                top: 29,
-                                child: SizedBox(
-                                  width: 214,
-                                  height: 28,
-                                  child: Text(
-                                    'Created by IBM Agency',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 55,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 114,
-                                top: 55,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 160,
-                                top: 66,
-                                child: SizedBox(
-                                  width: 64,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '120',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' min',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 46,
-                                top: 65,
-                                child: SizedBox(
-                                  width: 63,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '110 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: 'files',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 510,
-                top: 0,
-                child: Container(
-                  width: 231,
-                  height: 288,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 231,
-                          height: 288,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF76F314),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 8,
-                        top: 173,
-                        child: Container(
-                          width: 223,
-                          height: 99,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 1,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 192,
-                                  height: 28,
-                                  child: Text(
-                                    'Beyond Mind',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w800,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 29,
-                                child: SizedBox(
-                                  width: 203,
-                                  height: 28,
-                                  child: Text(
-                                    'Created by Thinkers.CO',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 59,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 110,
-                                top: 59,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 159,
-                                top: 69,
-                                child: SizedBox(
-                                  width: 64,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '90',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' min',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 47,
-                                top: 69,
-                                child: SizedBox(
-                                  width: 63,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '4 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: 'files',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 1022,
-                top: 0,
-                child: Container(
-                  width: 231,
-                  height: 288,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 231,
-                          height: 288,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFFFF6666),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 8,
-                        top: 173,
-                        child: Container(
-                          width: 223,
-                          height: 99,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 1,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 192,
-                                  height: 28,
-                                  child: Text(
-                                    'Philosophy OSHO',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w800,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 29,
-                                child: SizedBox(
-                                  width: 203,
-                                  height: 28,
-                                  child: Text(
-                                    'Created by Thinker.CO',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 59,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 110,
-                                top: 59,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 159,
-                                top: 69,
-                                child: SizedBox(
-                                  width: 64,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '50',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' min',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 47,
-                                top: 69,
-                                child: SizedBox(
-                                  width: 63,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '2 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: 'files',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 766,
-                top: 0,
-                child: Container(
-                  width: 231,
-                  height: 288,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 231,
-                          height: 288,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFFFD00B6),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 8,
-                        top: 173,
-                        child: Container(
-                          width: 223,
-                          height: 99,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 1,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 192,
-                                  height: 28,
-                                  child: Text(
-                                    'Data Analytics',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w800,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 29,
-                                child: SizedBox(
-                                  width: 203,
-                                  height: 28,
-                                  child: Text(
-                                    'Created by IBM',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 59,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 110,
-                                top: 59,
-                                child: Container(
-                                  width: 40,
-                                  height: 40,
-                                  decoration: ShapeDecoration(
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    shadows: [
-                                      BoxShadow(
-                                        color: Color(0x3F000000),
-                                        blurRadius: 4,
-                                        offset: Offset(0, 4),
-                                        spreadRadius: 3,
-                                      )
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 159,
-                                top: 69,
-                                child: SizedBox(
-                                  width: 64,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '110',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: ' min',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 47,
-                                top: 69,
-                                child: SizedBox(
-                                  width: 63,
-                                  height: 28,
-                                  child: Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: '60 ',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                        TextSpan(
-                                          text: 'files',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 13,
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w800,
-                                            height: 0,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 14,
-        top: 238,
-        child: Container(
-          width: 28,
-          height: 28,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/28x28"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 128,
-        top: 237,
-        child: Container(
-          width: 30,
-          height: 30,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/30x30"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 380,
-        top: 237,
-        child: Container(
-          width: 30,
-          height: 30,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/30x30"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 267,
-        top: 239,
-        child: Container(
-          width: 28,
-          height: 28,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/28x28"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 28,
-        top: 11,
-        child: Container(
-          width: 162,
-          height: 162,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/162x162"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 301,
-        top: 37,
-        child: Container(
-          width: 140,
-          height: 140,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/140x140"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 163,
-        top: 8,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 175,
-        top: 10,
-        child: Container(
-          width: 33,
-          height: 36,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/33x36"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 266,
-        top: 10,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 275,
-        top: 14,
-        child: Container(
-          width: 40,
-          height: 33,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/40x33"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 8,
-        top: 8,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 17,
-        top: 12,
-        child: Container(
-          width: 40,
-          height: 33,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/40x33"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 932,
-        top: 7,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1055,
-        top: 16,
-        child: Container(
-          width: 165,
-          height: 157,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/165x157"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 675,
-        top: 9,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 687,
-        top: 11,
-        child: Container(
-          width: 33,
-          height: 36,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/33x36"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 944,
-        top: 9,
-        child: Container(
-          width: 33,
-          height: 36,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/33x36"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 413,
-        top: 11,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 425,
-        top: 13,
-        child: Container(
-          width: 33,
-          height: 36,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/33x36"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 634,
-        top: 238,
-        child: Container(
-          width: 30,
-          height: 30,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/30x30"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 890,
-        top: 238,
-        child: Container(
-          width: 30,
-          height: 30,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/30x30"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1146,
-        top: 238,
-        child: Container(
-          width: 30,
-          height: 30,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/30x30"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 524,
-        top: 239,
-        child: Container(
-          width: 28,
-          height: 28,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/28x28"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 781,
-        top: 239,
-        child: Container(
-          width: 28,
-          height: 28,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/28x28"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1036,
-        top: 239,
-        child: Container(
-          width: 28,
-          height: 28,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/28x28"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 552,
-        top: 30,
-        child: Container(
-          width: 140,
-          height: 140,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/140x140"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 814,
-        top: 37,
-        child: Container(
-          width: 135,
-          height: 135,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/135x135"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1189,
-        top: 9,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1201,
-        top: 11,
-        child: Container(
-          width: 33,
-          height: 36,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/33x36"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1036,
-        top: 7,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 1045,
-        top: 11,
-        child: Container(
-          width: 40,
-          height: 33,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/40x33"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 775,
-        top: 7,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 784,
-        top: 11,
-        child: Container(
-          width: 40,
-          height: 33,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/40x33"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-      Positioned(
-        left: 521,
-        top: 9,
-        child: Container(
-          width: 57,
-          height: 40,
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F000000),
-                blurRadius: 4,
-                offset: Offset(0, 4),
-                spreadRadius: 3,
-              )
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 530,
-        top: 13,
-        child: Container(
-          width: 40,
-          height: 33,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/40x33"),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-      ),
-    ],
-  ),
-),
-Container(
-  width: 430,
-  height: 48,
-  clipBehavior: Clip.antiAlias,
-  decoration: BoxDecoration(
-    color: Colors.white.withOpacity(0.800000011920929),
-  ),
-  child: Row(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: [
-      Expanded(
-        child: Container(
-          height: 59,
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.800000011920929),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 40,
-                height: 13,
-                padding: const EdgeInsets.only(
-                  top: 0.95,
-                  left: 0.85,
-                  right: 0.37,
-                  bottom: 0.22,
-                ),
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                  ,
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      Expanded(
-        child: Container(
-          height: 59,
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.800000011920929),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 125,
-                height: 37,
-                decoration: ShapeDecoration(
-                  color: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      Expanded(
-        child: Container(
-          height: 59,
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.800000011920929),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 18,
-                height: 12,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    const SizedBox(width: 2),
-                    const SizedBox(width: 2),
-                    const SizedBox(width: 2),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              Container(
-                width: 18,
-                height: 12,
-                padding: const EdgeInsets.only(left: 0.05, right: 0.95),
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                  ,
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              Container(
-                width: 28,
-                height: 13,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(),
-                child: FlutterLogo(),
-              ),
-            ],
-          ),
-        ),
-      ),
-    ],
-  ),
-),
-Container(
-  width: 430,
-  height: 34,
-  padding: const EdgeInsets.only(top: 13),
-  clipBehavior: Clip.antiAlias,
-  decoration: BoxDecoration(color: Colors.white.withOpacity(0)),
-  child: Row(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: [
-      Container(
-        width: 134,
-        height: 5,
-        decoration: ShapeDecoration(
-          color: Colors.black,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
-        ),
-      ),
-    ],
-  ),
-),
-Container(
-  width: 37,
-  height: 37,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/37x37"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 31,
-  height: 37,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/31x37"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 40,
-  height: 35,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/40x35"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 30,
-  height: 30,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/30x30"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 29,
-  height: 33,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/29x33"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 32,
-  height: 32,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/32x32"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 40,
-  height: 40,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/40x40"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 25.55,
-  height: 26.28,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/26x26"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 31.39,
-  height: 25.55,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/31x26"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 30.66,
-  height: 26.28,
-  decoration: BoxDecoration(
-    image: DecorationImage(
-      image: NetworkImage("https://via.placeholder.com/31x26"),
-      fit: BoxFit.fill,
-    ),
-  ),
-),
-Container(
-  width: 50,
-  height: 48,
-  decoration: ShapeDecoration(
-    color: Color(0xFFB1DDFD),
-    shape: OvalBorder(),
-  ),
-)
+    Text("All Topics")
+      .font(Font.custom("Inter", size: 20).weight(.bold))
+      .foregroundColor(.white)
+    Text("Newest")
+      .font(Font.custom("Inter", size: 20).weight(.bold))
+      .foregroundColor(Color(red: 0, green: 0, blue: 0.06))
+    Text("Mock Test")
+      .font(Font.custom("Inter", size: 20).weight(.bold))
+      .foregroundColor(Color(red: 0, green: 0, blue: 0.06))
+    Text("Hi , Good Morning ")
+      .font(Font.custom("Inter", size: 20).weight(.heavy))
+      .foregroundColor(Color(red: 0.33, green: 0.76, blue: 1))
+    Text("Anuj")
+      .font(Font.custom("Kanit", size: 30).weight(.bold))
+      .foregroundColor(Color(red: 0, green: 0, blue: 0.06))
+    ZStack() {
+      Group {
+        ZStack() {
+          ZStack() {
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 231, height: 288)
+              .background(Color(red: 0.32, green: 0.76, blue: 1))
+              .cornerRadius(25)
+              .offset(x: 0, y: 0)
+            ZStack() {
+              Text("Design Fundamentals")
+                .font(Font.custom("Inter", size: 20).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -2.50, y: -33.50)
+              Text("Created by Coursera Agency")
+                .font(Font.custom("Inter", size: 16).weight(.medium))
+                .foregroundColor(.white)
+                .offset(x: 0, y: -4.50)
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: -89, y: 27.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: 26, y: 27.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Text("40 min")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: 81, y: 32.50)
+              Text("17 files")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -29.50, y: 33.50)
+            }
+            .frame(width: 228, height: 95)
+            .offset(x: 1.50, y: 80.50)
+          }
+          .frame(width: 231, height: 288)
+          .offset(x: -511, y: 0)
+          ZStack() {
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 231, height: 288)
+              .background(Color(red: 0.97, green: 0.68, blue: 0.19))
+              .cornerRadius(25)
+              .offset(x: -0, y: 0)
+            ZStack() {
+              Text("Machine Learning")
+                .font(Font.custom("Inter", size: 20).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -8.50, y: -33.50)
+              Text("Created by IBM Agency")
+                .font(Font.custom("Inter", size: 16).weight(.medium))
+                .foregroundColor(.white)
+                .offset(x: -4, y: -4.50)
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: -92, y: 27.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: 22, y: 27.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Text("120 min")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: 80, y: 32.50)
+              Text("110 files")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -34.50, y: 31.50)
+            }
+            .frame(width: 224, height: 95)
+            .offset(x: 3.50, y: 80.50)
+          }
+          .frame(width: 231, height: 288)
+          .offset(x: -257, y: 0)
+          ZStack() {
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 231, height: 288)
+              .background(Color(red: 0.46, green: 0.95, blue: 0.08))
+              .cornerRadius(25)
+              .offset(x: 0, y: 0)
+            ZStack() {
+              Text("Beyond Mind")
+                .font(Font.custom("Inter", size: 20).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -14.50, y: -35.50)
+              Text("Created by Thinkers.CO")
+                .font(Font.custom("Inter", size: 16).weight(.medium))
+                .foregroundColor(.white)
+                .offset(x: -10, y: -6.50)
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: -91.50, y: 29.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: 18.50, y: 29.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Text("90 min")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: 79.50, y: 33.50)
+              Text("4 files")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -33, y: 33.50)
+            }
+            .frame(width: 223, height: 99)
+            .offset(x: 4, y: 78.50)
+          }
+          .frame(width: 231, height: 288)
+          .offset(x: -1, y: 0)
+          ZStack() {
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 231, height: 288)
+              .background(Color(red: 1, green: 0.40, blue: 0.40))
+              .cornerRadius(25)
+              .offset(x: 0, y: 0)
+            ZStack() {
+              Text("Philosophy OSHO")
+                .font(Font.custom("Inter", size: 20).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -14.50, y: -35.50)
+              Text("Created by Thinker.CO")
+                .font(Font.custom("Inter", size: 16).weight(.medium))
+                .foregroundColor(.white)
+                .offset(x: -10, y: -6.50)
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: -91.50, y: 29.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: 18.50, y: 29.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Text("50 min")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: 79.50, y: 33.50)
+              Text("2 files")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -33, y: 33.50)
+            }
+            .frame(width: 223, height: 99)
+            .offset(x: 4, y: 78.50)
+          }
+          .frame(width: 231, height: 288)
+          .offset(x: 511, y: 0)
+          ZStack() {
+            Rectangle()
+              .foregroundColor(.clear)
+              .frame(width: 231, height: 288)
+              .background(Color(red: 1, green: 0, blue: 0.72))
+              .cornerRadius(25)
+              .offset(x: 0, y: 0)
+            ZStack() {
+              Text("Data Analytics")
+                .font(Font.custom("Inter", size: 20).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -14.50, y: -35.50)
+              Text("Created by IBM")
+                .font(Font.custom("Inter", size: 16).weight(.medium))
+                .foregroundColor(.white)
+                .offset(x: -10, y: -6.50)
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: -91.50, y: 29.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Rectangle()
+                .foregroundColor(.clear)
+                .frame(width: 40, height: 40)
+                .background(.white)
+                .cornerRadius(12)
+                .offset(x: 18.50, y: 29.50)
+                .shadow(
+                  color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+                )
+              Text("110 min")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: 79.50, y: 33.50)
+              Text("60 files")
+                .font(Font.custom("Inter", size: 16).weight(.heavy))
+                .foregroundColor(.white)
+                .offset(x: -33, y: 33.50)
+            }
+            .frame(width: 223, height: 99)
+            .offset(x: 4, y: 78.50)
+          }
+          .frame(width: 231, height: 288)
+          .offset(x: 255, y: 0)
+        }
+        .frame(width: 1253, height: 288)
+        .offset(x: 420, y: 0)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 28, height: 28)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/28x28"))
+          )
+          .offset(x: -178.50, y: 108)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 30, height: 30)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/30x30"))
+          )
+          .offset(x: -63.50, y: 108)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 30, height: 30)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/30x30"))
+          )
+          .offset(x: 188.50, y: 108)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 28, height: 28)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/28x28"))
+          )
+          .offset(x: 74.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 162, height: 162)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/162x162"))
+          )
+          .offset(x: -97.50, y: -52)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 140, height: 140)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/140x140"))
+          )
+          .offset(x: 164.50, y: -37)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: -15, y: -116)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 33, height: 36)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/33x36"))
+          )
+          .offset(x: -15, y: -116)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 88, y: -114)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+      }Group {
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 40, height: 33)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/40x33"))
+          )
+          .offset(x: 88.50, y: -113.50)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: -170, y: -116)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 40, height: 33)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/40x33"))
+          )
+          .offset(x: -169.50, y: -115.50)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 754, y: -117)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 165, height: 157)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/165x157"))
+          )
+          .offset(x: 931, y: -49.50)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 497, y: -115)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 33, height: 36)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/33x36"))
+          )
+          .offset(x: 497, y: -115)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 33, height: 36)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/33x36"))
+          )
+          .offset(x: 754, y: -117)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 235, y: -113)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 33, height: 36)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/33x36"))
+          )
+          .offset(x: 235, y: -113)
+      }Group {
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 30, height: 30)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/30x30"))
+          )
+          .offset(x: 442.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 30, height: 30)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/30x30"))
+          )
+          .offset(x: 698.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 30, height: 30)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/30x30"))
+          )
+          .offset(x: 954.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 28, height: 28)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/28x28"))
+          )
+          .offset(x: 331.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 28, height: 28)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/28x28"))
+          )
+          .offset(x: 588.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 28, height: 28)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/28x28"))
+          )
+          .offset(x: 843.50, y: 109)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 140, height: 140)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/140x140"))
+          )
+          .offset(x: 415.50, y: -44)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 135, height: 135)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/135x135"))
+          )
+          .offset(x: 675, y: -39.50)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 1011, y: -115)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 33, height: 36)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/33x36"))
+          )
+          .offset(x: 1011, y: -115)
+      }Group {
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 858, y: -117)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 40, height: 33)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/40x33"))
+          )
+          .offset(x: 858.50, y: -116.50)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 597, y: -117)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 40, height: 33)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/40x33"))
+          )
+          .offset(x: 597.50, y: -116.50)
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 57, height: 40)
+          .background(.white)
+          .cornerRadius(12)
+          .offset(x: 343, y: -115)
+          .shadow(
+            color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
+          )
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 40, height: 33)
+          .background(
+            AsyncImage(url: URL(string: "https://via.placeholder.com/40x33"))
+          )
+          .offset(x: 343.50, y: -114.50)
+      }
+    }
+    .frame(width: 413, height: 288)
+    HStack(spacing: 0) {
+      HStack(spacing: 0) {
+        HStack(spacing: 0) {
+
+        }
+        .padding(
+          EdgeInsets(top: 0.95, leading: 0.85, bottom: 0.22, trailing: 0.37)
+        )
+        .frame(width: 40, height: 13)
+      }
+      .frame(maxWidth: .infinity, minHeight: 59, maxHeight: 59)
+      .background(Color(red: 1, green: 1, blue: 1).opacity(0.80))
+      HStack(spacing: 0) {
+        Rectangle()
+          .foregroundColor(.clear)
+          .frame(width: 125, height: 37)
+          .background(.black)
+          .cornerRadius(20)
+      }
+      .frame(maxWidth: .infinity, minHeight: 59, maxHeight: 59)
+      .background(Color(red: 1, green: 1, blue: 1).opacity(0.80))
+      HStack(spacing: 8) {
+        HStack(alignment: .bottom, spacing: 2) {
+
+        }
+        .frame(width: 18, height: 12)
+        HStack(spacing: 0) {
+
+        }
+        .padding(EdgeInsets(top: 0, leading: 0.05, bottom: 0, trailing: 0.95))
+        .frame(width: 18, height: 12)
+        ZStack() {
+
+        }
+        .frame(width: 28, height: 13)
+      }
+      .frame(maxWidth: .infinity, minHeight: 59, maxHeight: 59)
+      .background(Color(red: 1, green: 1, blue: 1).opacity(0.80))
+    }
+    .frame(width: 430, height: 48)
+    .background(Color(red: 1, green: 1, blue: 1).opacity(0.80))
+    HStack(spacing: 0) {
+      Rectangle()
+        .foregroundColor(.clear)
+        .frame(width: 134, height: 5)
+        .background(.black)
+        .cornerRadius(3)
+    }
+    .padding(EdgeInsets(top: 13, leading: 0, bottom: 0, trailing: 0))
+    .frame(width: 430, height: 34)
+    .background(Color(red: 1, green: 1, blue: 1).opacity(0))
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 37, height: 37)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/37x37"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 31, height: 37)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/31x37"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 40, height: 35)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/40x35"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 30, height: 30)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/30x30"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 29, height: 33)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/29x33"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 32, height: 32)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/32x32"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 40, height: 40)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/40x40"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 25.55, height: 26.28)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/26x26"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 31.39, height: 25.55)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/31x26"))
+      )
+    Rectangle()
+      .foregroundColor(.clear)
+      .frame(width: 30.66, height: 26.28)
+      .background(
+        AsyncImage(url: URL(string: "https://via.placeholder.com/31x26"))
+      )
+    Ellipse()
+      .foregroundColor(.clear)
+      .frame(width: 50, height: 48)
+      .background(Color(red: 0.70, green: 0.87, blue: 1));
+  }
+}
+
+struct ContentView_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView()
+  }
+}
