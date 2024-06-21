@@ -170,4 +170,4 @@ Submitted the app to the App Store for review and release.
 
 https://drive.google.com/file/d/1xioxLCeHgvsWN5vF8zlx_WTt3qmirBu0/view?usp=sharing
 
-By following these steps, you created a robust and user-friendly eLearning platform with SwiftUI, showcasing your skills in both design and development.
+By following these steps, I have created a robust and user-friendly eLearning platform with SwiftUI, showcasing my skills in both design and development.
